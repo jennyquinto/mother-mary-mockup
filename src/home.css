@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #002339;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0 70px 0 150px;
+    background-image: url(./assets/light.png);
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 60px;
+}
+
+nav img {
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    align-items: center;
+    gap: 2em;
+    font: 500 1em/1.25 'Outfit', sans-serif;
+    color: #FFFFFF;
+}
+
+nav button {
+    font: 600 1em/1.22 'Montserrat', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 2px solid #F6D356;
+    border-radius: 16.5px;
+    padding: 1.123em;
+    cursor: pointer;
+}
+
+nav button:is(:hover, :focus) {
+    background-color: #F6D356;
+    color: #FFFFFF;
+}
+
+.header-section {
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+
+}
+
+.header-section div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header-title {
+    font: 900 70px/84px 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    margin-top: 65px;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px;
+}
+
+.header-title::after {
+    content: attr(data-end);
+    background-image: url(./assets/Ellipse.png);
+    background-repeat: no-repeat;
+}
+
+.header-text {
+    font: 400 20px/30px 'Outfit', sans-serif;
+    color: #FFFFFF;
+    margin: 25px 0;
+
+}
+
+.header-section div button {
+    font: 700 16px/1.22em 'Montserrat', sans-serif;
+    text-align: center;
+    color: #262626;
+    background: linear-gradient(#FECB48, #F6B100);
+    padding: 23px 33px;
+    width: fit-content;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+}
+
+.header-arrow {
+    width: 44px;
+    object-fit: cover;
+    position: absolute;
+    bottom: -22px;
+    left: -50px;
+}
+
+.header-stars {
+    width: 56px;
+    object-fit: contain;
+    position: absolute;
+    bottom: 55px;
+    right: -70px;
+}
+
+.top-userSection {
+    display: flex;
+    background-color: #FFCB5E;
+    text-align: left;
+    gap: 33px;
+    padding: 20px 0 12px 0;
+    align-items: center;
+}
+
+.top-userSection span {
+    min-width: max-content;
+    font: 400 42.4px/44.16px 'Zen Dots';
+    -webkit-text-stroke: 1.26px #000000;
+    color: transparent;
+    letter-spacing: -4px;
+}
+
+.top-userSection:first-child {
+    position: relative;
+    left: -10px;
+}
+
+.info-userSection {
+    padding: 105px 0;
+    background-image: url(./assets/light2.png);
+    background-repeat: no-repeat;
+    background-position-y: -350px;
+    background-size: cover;
+}
+
+.info-userSection h2 {
+    color: #FFFFFF;
+    font: 900 54px/70.2px 'Montserrat', sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.info-userSection h2 img {
+    position: absolute;
+    top: -25px;
+    right: 300px;
+}
+
+.info-userSection p {
+    font: 400 20px/30px 'Outfit', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 11px 0 42px 0;
+}
+
+.usersWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 70px 0 150px;
+    gap: 30px;
+}
+
+.usersWrapper section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 264px;
+    min-height: 129px;
+    text-align: center;
+    border: 0.5px solid rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.usersWrapper section::after {
+    content: url(./assets/star.png);
+    position: absolute;
+    right: -30px;
+    bottom: -33px;
+}
+
+.usersWrapper section span {
+    font: 400 20px/24px 'Montserrat', sans-serif;
+    color: #F6D554;
+}
+
+.usersWrapper section p {
+    font: 900 20px/24px 'Montserrat', sans-serif;
+    color: #FFFFFF;
+}
